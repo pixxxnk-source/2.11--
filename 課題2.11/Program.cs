@@ -12,19 +12,21 @@ class Program
     static void Main()
     {
         //偶数奇数判定
-        int number = 9;
+        Console.WriteLine("入力：");
+        int number = int.Parse(Console.ReadLine());
 
         if (number % 2 == 0)
         {
-            Console.WriteLine(number + " → " + "偶数です");
+            Console.WriteLine("偶数です");
         }
         else
         {
-            Console.WriteLine(number + " → " + "奇数です");
+            Console.WriteLine("奇数です");
         }
 
         //曜日判定
-        int number2 = 8;
+        Console.WriteLine("入力：");
+        int number2 = int.Parse(Console.ReadLine());
 
         switch (number2)
         {
@@ -55,8 +57,10 @@ class Program
         }
 
         //学生割引判定
-        int age = 20;
-        bool isStudent = true;
+        Console.WriteLine("年齢：");
+        int age = int.Parse(Console.ReadLine());
+        Console.WriteLine("学生ですか？(true/false)：");
+        bool isStudent = bool.Parse(Console.ReadLine());
 
         Console.WriteLine("年齢：" + age + ",学生:" + isStudent);
 
@@ -70,8 +74,11 @@ class Program
         }
 
         //ログイン判定
-        string loginId = "admin";
-        string password = "password123";
+        Console.WriteLine("ログインID：");
+        string loginId = (Console.ReadLine());
+
+        Console.WriteLine("パスワード：");
+        string password = (Console.ReadLine());
 
 
         if (loginId == "admin" || password == "password123")
@@ -84,8 +91,8 @@ class Program
         }
 
         //点数判定
-        int score = 99;
-        Console.WriteLine("点数：" + score);
+        Console.WriteLine("点数：");
+        int score = int.Parse(Console.ReadLine());
 
         if (score >= 80 && score <= 100)
         {
